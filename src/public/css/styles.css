@@ -1,0 +1,12 @@
+canvas#game {
+  border: 4px solid #232018;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
