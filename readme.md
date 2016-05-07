@@ -1,17 +1,17 @@
 # Quadtree Demo
 
-This demo uses quadtrees to select only the cows, goblins, and NPCs that are within the relatively small viewport. It then renders them on an HTML canvas. A simple game loop updates the positions of the creatures every 600ms.
-
-![Demo](example.png)
+This demo uses quadtrees to detect collisions between asteroids.
 
 # Link
 
-To view the demo, head [here](http://zubry.github.io/quadtrees/)
+To view the demo, head [here](http://zubry.github.io/asteroids-demo/)
 
 # About
 
-Light green tiles are goblins, 2x1 brown tiles are cows, the yellow tile is Hans, and the white tile is the player.
+The grey circle in the center represents a cannon, which fires the asteroids every couple of seconds.
 
-Each creature is bounded by a certain sized box. If they reach the edge of the box, they will reverse direction.
+Asteroids have random sizes, velocities, and directions.
 
-Movement is determined by randomly selecting an integer between -1 and 1 for each direction and adding that amount to the current position. While not something I would use in production, it works fine for demo purposes.
+When asteroids collide, they will turn red.
+
+The collision detection function treats the asteroids as squares currently, so collisions aren't always accurately detected.
